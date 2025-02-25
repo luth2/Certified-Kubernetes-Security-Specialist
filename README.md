@@ -26,7 +26,7 @@ Offical exam objectives you review and understand in order to pass the test.
   - [X] [Supply Chain Security - 20%](#supply-chain-security---20)
   - [X] [Monitoring, Logging and Runtime Security - 20%](#monitoring-logging-and-runtime-security---20)
 
-### Cluster Setup - 10%
+### Cluster Setup - 15%
 :large_blue_circle: [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
 
 1. [Use Network security policies to restrict cluster level access](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
@@ -35,7 +35,7 @@ Offical exam objectives you review and understand in order to pass the test.
 3. Properly set up [Ingress objects with security control](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls)
 4. [Protect node metadata and endpoints](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#restricting-cloud-metadata-api-access)
 
-    <details><summary> Using Kubernetes network policy to restrict pods access to cloud metadata </summary>
+    <summary> Using Kubernetes network policy to restrict pods access to cloud metadata </summary>
 
       * This example assumes AWS cloud, and metadata IP address is 169.254.169.254 should be blocked while all other external addresses are not.
 
@@ -55,7 +55,6 @@ Offical exam objectives you review and understand in order to pass the test.
             except:
             - 169.254.169.254/32
       ```
-    </details>
 
 5. [Minimize use of, and access to, GUI elements](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#accessing-the-dashboard-ui)
 6. [Verify platform binaries before deploying](https://github.com/kubernetes/kubernetes/releases)
@@ -103,7 +102,7 @@ Offical exam objectives you review and understand in order to pass the test.
 
 4. [Update Kubernetes frequently](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-upgrade/)
 
-### System Hardening - 15%
+### System Hardening - 10%
 
 1. Minimize host OS footprint (reduce attack surface)
 
