@@ -59,12 +59,10 @@ Offical exam objectives you review and understand in order to pass the test.
 5. [Minimize use of, and access to, GUI elements](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#accessing-the-dashboard-ui)
 6. [Verify platform binaries before deploying](https://github.com/kubernetes/kubernetes/releases)
 
-     <details><summary> :clipboard:  Kubernetes binaries can be verified by their digest **sha512 hash**  </summary>
+    <summary> :clipboard:  Kubernetes binaries can be verified by their digest **sha512 hash**  </summary>
 
      - Checking the Kubernetes release page for the specific release
      - Checking the change log for the [images and their digests](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md#downloads-for-v1191)
-
-     </details>
 
 
 ### Cluster Hardening - 15%
@@ -76,7 +74,7 @@ Offical exam objectives you review and understand in order to pass the test.
     * :triangular_flag_on_post: [Simplify Kubernetes Resource Access Control using RBAC Impersonation](https://docs.bitnami.com/tutorials/simplify-kubernetes-resource-access-rbac-impersonation/)
 3. Exercise caution in using service accounts e.g. [disable defaults](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#use-the-default-service-account-to-access-the-api-server), minimize permissions on newly created ones
 
-   <details><summary> :clipboard: Opt out of automounting API credentials for a service account </summary>
+   <summary> :clipboard: Opt out of automounting API credentials for a service account </summary>
 
    #### Opt out at service account scope
    ```yaml
@@ -97,16 +95,13 @@ Offical exam objectives you review and understand in order to pass the test.
      automountServiceAccountToken: false
    ```
 
-   </details>
-
-
 4. [Update Kubernetes frequently](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-upgrade/)
 
 ### System Hardening - 10%
 
 1. Minimize host OS footprint (reduce attack surface)
 
-   <details><summary> :clipboard: :confused: Reduce host attack surface </summary>
+   <summary> :clipboard: :confused: Reduce host attack surface </summary>
 
    * [seccomp which stands for secure computing was originally intended as a means of safely running untrusted compute-bound programs](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
    * [AppArmor can be configured for any application to reduce its potential host attack surface and provide greater in-depth defense.](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
@@ -118,13 +113,12 @@ Offical exam objectives you review and understand in order to pass the test.
    * Protect access to data with permissions
      *  [Restirct allowed hostpaths](https://kubernetes.io/docs/concepts/policy/pod-security-policy/#volumes-and-file-systems)
 
-   </details>
 
 2. Minimize IAM roles
    * :confused: [Access authentication and authorization](https://kubernetes.io/docs/reference/access-authn-authz/authentication/)
 3. Minimize external access to the network
 
-   <details><summary> :clipboard: :confused: if it means deny external traffic to outside the cluster?!! </summary>
+   <summary> :clipboard: :confused: if it means deny external traffic to outside the cluster?!! </summary>
 
    * not tested, however, the thinking is that all pods can talk to all pods in all name spaces but not to the outside of the cluster!!!
 
@@ -141,8 +135,6 @@ Offical exam objectives you review and understand in order to pass the test.
        to:
        - namespaceSelector: {}
      ```
-
-    </details>
 
 4. Appropriately use kernel hardening tools such as AppArmor, seccomp
    * [AppArmor](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
@@ -162,14 +154,13 @@ Offical exam objectives you review and understand in order to pass the test.
 
 1. Minimize base image footprint
 
-   <details><summary> :clipboard: Minimize base Image </summary>
+   <summary> :clipboard: Minimize base Image </summary>
 
    * Use distroless, UBI minimal, Alpine, or relavent to your app nodejs, python but the minimal build.
    * Do not include uncessary software not required for container during runtime e.g build tools and utilities, troubleshooting and debug binaries.
      * :triangular_flag_on_post: [Learnk8s: 3 simple tricks for smaller Docker images](https://learnk8s.io/blog/smaller-docker-images)
       * :triangular_flag_on_post: [GKE 7 best practices for building containers](https://cloud.google.com/blog/products/gcp/7-best-practices-for-building-containers)
 
-   </details>
 
 2. Secure your supply chain: [whitelist allowed image registries](https://kubernetes.io/blog/2019/03/21/a-guide-to-kubernetes-admission-controllers/#why-do-i-need-admission-controllers), sign and validate images
   * Using [ImagePolicyWebhook admission Controller](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagepolicywebhook)
@@ -188,14 +179,12 @@ Offical exam objectives you review and understand in order to pass the test.
 2. Detect threats within a physical infrastructure, apps, networks, data, users and workloads
 3. Detect all phases of attack regardless where it occurs and how it spreads
 
-   <details><summary> :clipboard:  Attack Phases </summary>
+   <summary> :clipboard:  Attack Phases </summary>
 
      - :triangular_flag_on_post: [Kubernetes attack martix Microsoft blog](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/)
      - :triangular_flag_on_post: [MITRE attack framwork using Falco](https://sysdig.com/blog/mitre-attck-framework-for-container-runtime-security-with-sysdig-falco/)
      - :triangular_flag_on_post: [Lightboard video: Kubernetes attack matrix - 3 steps to mitigating the MITRE ATT&CK Techniques](https://www.youtube.com/watch?v=0fnWu06eQCU)
      - :triangular_flag_on_post: [CNCF Webinar: Mitigating Kubernetes attacks](https://www.cncf.io/webinars/mitigating-kubernetes-attacks/)
-
-   </details>
 
 4. Perform deep analytical investigation and identification of bad actors within the environment
    - [Sysdig documentation](https://docs.sysdig.com/)
