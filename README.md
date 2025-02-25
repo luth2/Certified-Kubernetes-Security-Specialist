@@ -5,22 +5,6 @@
 <p align="center">
   <img width="360" src="kubernetes-security-specialist-logo-300x285.png">
 </p>
-
-Online curated resources that will help you prepare for taking the Kubernetes Certified Kubernetes Security Specialist **CKS** Certification exam.
-
-- Please raise an issue, or make a pull request for fixes, new additions, or updates.
-
-Resources are primarly cross referenced back to the [allowed CKS sites](#urls-allowed-in-the-extra-single-tab) during the exam as per CNCF/Linux Foundation exam allowed search rules. Videos and other third party resources e.g. blogs will be provided as an optional complimentary material and any 3rd party material not allowed in the exam will be designated with :triangular_flag_on_post: in the curriculum sections below.
-
-Ensure you have the right version of Kubernetes documentation selected (e.g. v1.26 as of January 2023) especially for API objects and annotations, however for third party tools, you might find that you can still find references for them in old releases and blogs [e.g. Falco install](https://github.com/kubernetes/website/issues/24184).
-
-* Icons/emoji legend
-  - :clipboard:  Expand to see more content
-  - :confused:   Verify, not best resource yet
-  - :large_blue_circle: Good overall refence, can be used in the exam
-  - :triangular_flag_on_post: External third-party resource, can not be used during exam
-  - :pencil:  To-do, item that needs further checking(todo list for future research/commits)
-
 ## Exam Brief
 
 Offical exam objectives you review and understand in order to pass the test.
@@ -32,40 +16,6 @@ Offical exam objectives you review and understand in order to pass the test.
 - Passing score: 67%
 - Certification validity: two (2) years
 - Prerequisite: valid CKA
-- Cost: $375 USD, One (1) year exam eligibility, with a free retake within the year.
-
-  *Linux Foundation offer several discounts around the year e.g. CyberMonday, Kubecon attendees among other special holidays/events*
-
-### URLs to prepare for the exam:
-  - Kubernetes Documentation:
-    - https://kubernetes.io/docs and their subdomains
-    - https://github.com/kubernetes and their subdomains
-    - https://kubernetes.io/blog and their subdomains
-
-  This includes all available language translations of these pages (e.g. https://kubernetes.io/zh/docs)
-  - Tools:
-    - [Trivy documentation](https://github.com/aquasecurity/trivy)
-    - [Falco documentation](https://falco.org/docs)
-    - [App Armor documentation](https://gitlab.com/apparmor/apparmor/-/wikis/Documentation)
-
-
-### Exam interface
-According to official Linux Foundation [documentation](https://docs.linuxfoundation.org/tc-docs/certification/important-instructions-cks#cks-environment) and as of June 2022,  there was a change in the exam platform. It is just an exam platform, so the exam questions will not change, but there were a few things that seemed to concern you, so I will write them down:
-
-- A **remote desktop** configured with the tools and software needed to complete the tasks 
-- Candidates can start the “Take Exam” Process 30 minutes prior to their scheduled date/time (currently 15mins on PSI ExamsLocal platform)
-- Self check-in: no need to wait for  a proctor in order to upload your ID and scan your environment
-- The exam will now be taken using the PSI Secure Browser, which can be downloaded using the newest versions of Microsoft Edge, Safari, Chrome, or Firefox
-- Multiple monitors will no longer be permitted
-- Use of personal bookmarks will no longer be permitted (Personal browser bookmarks such as bookmarked links to YAML files will not be accessible within the PSI Secure Browser) 
-
-The new ExamUI includes improved features such as: 
-- A timer that displays the actual time remaining (in minutes) and provides an alert with 30, 15, or 5 minute remaining
-- The content panel remains the same (presented on the Left Hand Side of the ExamUI)
-
-
-
-
 
 ## CKS repo topics overview
 
@@ -75,17 +25,6 @@ The new ExamUI includes improved features such as:
   - [X] [Minimize Microservice Vulnerabilities - 20%](#minimize-microservice-vulnerabilities---20)
   - [X] [Supply Chain Security - 20%](#supply-chain-security---20)
   - [X] [Monitoring, Logging and Runtime Security - 20%](#monitoring-logging-and-runtime-security---20)
-
-  #### Extra helpful material
-
-  - [x] [Slack](#slack)
-  - [x] [Books](#books)
-  - [x] [Youtube Videos](#youtube-videos)
-  - [x] [Webinars](#webinars)
-  - [x] [Containers and Kubernetes Security Training](#containers-and-kubernetes-security-training)
-  - [x] [Extra Kubernetes security resources](generic-kubernetes-containers-security/Kubernetes.md)
-
-<hr style="border:3px solid blue"> </hr>
 
 ### Cluster Setup - 10%
 :large_blue_circle: [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
@@ -267,57 +206,3 @@ The new ExamUI includes improved features such as:
 6. [Use Audit Logs to monitor access](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
 
 <hr style="border:3px solid blue"> </hr>
-
-## Extra helpful material
-
-### Slack
-
-1. [Kubernetes Community - #cks-exam-prep](https://kubernetes.slack.com)
-1. [Kubernauts Community - #cks](https://kubernauts-slack-join.herokuapp.com/)
-2. [Saiyam's Pathak OpenSource Discord #CKS channel](https://discord.gg/9PQBYKntPR)
-
-
-### Twitch
-
-1. [KubeNativeSecurity twitch stream Talk Shows & Podcasts](https://www.twitch.tv/kubenativesecurity)
-
-### Books
-
-1. [Aqua Security Liz Rice:Free Container Security Book](https://info.aquasec.com/container-security-book)
-1. [Learn Kubernetes security: Securely orchestrate, scale, and manage your microservices in Kubernetes deployments](https://www.amazon.com/Learn-Kubernetes-Security-orchestrate-microservices/dp/1839216506)
-1. [Let's Learn CKS Scenarios](https://gumroad.com/l/cksbook)
-
-### Youtube Videos
-
-1. [Killer Shell: Kubernetes CKS Full Course Theory + Practice + Browser Scenarios](https://youtu.be/d9xfB5qaOfg)
-1. [Google/Ian Lewis: Kubernetes security best practices](https://youtu.be/wqsUfvRyYpw)
-1. [Code in Action for the **book Learn Kubernetes Security** playlist](https://www.youtube.com/playlist?list=PLeLcvrwLe1859Rje9gHrD1KEp4y5OXApB)
-1. [Kubernetes security concepts and demos](https://youtu.be/VjlvS-qiz_U)
-1. [Webinar | Certified Kubernetes Security Specialist (CKS), January 2022](https://youtu.be/Qqoe-PbuQcs)
-
-### Containers and Kubernetes Security Training
-
-1. [Killer.sh CKS practice exam](https://killer.sh/cks) - use code **walidshaari** for **20%** discount.
-1. UDEMY Kim Wüstkamp's [Kubernetes CKS 2021 Complete Course with killer.sh Simulator **(discounted price)**](https://killer.sh/r?d=cks-course)
-1. [Linux Foundation Kubernetes Security essentials LFS 260](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/)
-2. [Mumshad's KodeCloud "Certified Kubernetes Security Specialist" CKS and training and labs](https://kodekloud.com/p/certified-kubernetes-security-specialist-cks)
-3. [Linux Academy/ACloudGuru Kubernetes security](https://acloud.guru/learn/7d2c29e7-cdb2-4f44-8744-06332f47040e)
-4. Zeal Vora's Udemy [ Certified Kubernetes Security Specialist 2021 ](https://www.udemy.com/course/certified-kubernetes-security-specialist-certification/?referralCode=F38A7E4C09BFEC7E3C58) - Link includes a discount till 28th January 2021
-5. [Cloud native security defending containers and kubernetes](https://www.sans.org/event/stay-sharp-blue-team-ops-and-cloud-dec-2020/course/cloud-native-security-defending-containers-kubernetes)
-6. [Tutorial: Getting Started With Cloud-Native Security - Liz Rice, Aqua Security & Michael Hausenblas](https://youtu.be/MisS3wSds40)
-    - [Hands-on Tutorial](https://tutorial.kubernetes-security.info/)
-7. [K21 academy CKS step by step activity hands-on-lab activity guide](https://k21academy.com/docker-kubernetes/certified-kubernetes-security-specialist-cks-step-by-step-activity-guide-hands-on-lab)
-8. [Andrew Martin Control Plane Security training](https://control-plane.io/training/)
-9. [Free Exam simulators from killer.sh available with CKS certification from Linux Foundation](https://training.linuxfoundation.org/announcements/linux-foundation-kubernetes-certifications-now-include-exam-simulator/)
-10. [Sysdig Falco 101](https://learn.sysdig.com/falco-101)
-11. [Killercoda in-browser CKS Playground and Challenges](https://killercoda.com/killer-shell-cks) - FREE
-
-#### Other CKS related repos
-
-1. [Stackrox CKS study guide](https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide) - Brief and informative study guide from [Stackrox @mfosterrox](https://www.stackrox.com/authors/mfoster/)
-2. [Kim's CKS Challenge series](https://github.com/killer-sh/cks-challenge-series) - also posted on medium @ https://wuestkamp.medium.com/
-3. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist)
-4. [Ibrahim Jelliti](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)
-5. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist)
-6. [Kubernetes Security Checklist and Requirements](https://github.com/Vinum-Security/kubernetes-security-checklist)
-7. [CKS Exam series](https://github.com/moabukar/CKS-Exercises-Certified-Kubernetes-Security-Specialist.git)
